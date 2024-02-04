@@ -37,7 +37,7 @@ header {
     color: #28457b;
     background-color: rgba(232, 239, 254, 0.6);
     padding: 10px 27px;
-    margin-right: 20px;
+    margin: 0 20px;
     border-radius: 20px;
     font-family: YekanBakhBold;
 }
@@ -126,6 +126,79 @@ header {
     animation: fadeInDown 0.25s forwards;
 }
 
+/* drop down more */
+#show-more-menu {
+    position: relative;
+}
+
+#show-more-menu ul {
+    position: absolute;
+    top: 0;
+    display: none;
+    left: -35px;
+    list-style: none;
+    width: 123px;
+    background-color: #fff;
+    border-top: 5px solid #f8e88b;
+    border-radius: 12px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-top: 23px;
+}
+
+#show-more-menu li {
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    color: black;
+}
+#show-more-menu li:hover {
+    background-color: rgba(232, 239, 254, 0.4);
+}
+
+/* drop down products */
+#show-product-menu {
+    position: relative;
+}
+
+.product-menu {
+    position: absolute;
+    top: 0;
+    left: -135px;
+    display: none;
+    justify-content: flex-start;
+    background-color: #fff;
+    width: 372px;
+    border-top: 5px solid #f8e88b;
+    border-radius: 12px;
+    padding-top: 5px;
+    margin-top: 23px;
+}
+
+.product-menu a p:first-child {
+    color: #000;
+    font-size: 0.95rem;
+}
+.product-menu a p:first-child:hover {
+    color: #28457b;
+}
+
+.product-menu a p:last-child {
+    color: #000;
+    font-size: 0.7rem;
+}
+
+.product-menu a {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.product-menu a:hover {
+    background-color: rgba(232, 239, 254, 0.4);
+}
+
 /* hamburger menu animation */
 @keyframes fadeInDown {
     0% {
@@ -135,6 +208,16 @@ header {
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* animation drop down */
+@keyframes showUp {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 
