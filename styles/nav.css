@@ -234,7 +234,7 @@ header {
         padding: 20px 60px;
     }
 
-    .header-menu li:last-child {
+    #last-child {
         display: none;
     }
 
