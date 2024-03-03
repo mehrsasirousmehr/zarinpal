@@ -1,0 +1,135 @@
+.banner {
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    padding: 124px 60px 80px;
+    margin: 20px auto;
+    background-image: linear-gradient(135deg, #21254e, #2b4a83);
+    border-radius: 20px;
+}
+
+.banner__text h3 {
+    font-family: YekanBakhHeavy;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.banner__text p {
+    color: #fff;
+    font-size: 1rem;
+    margin: 25px 0;
+    line-height: 2.5rem;
+}
+
+.banner__img img {
+    width: 500px;
+}
+
+.banner__button {
+    margin-top: 60px;
+}
+
+.register {
+    font-family: YekanBakhBold;
+    font-size: 1rem;
+    background-color: #ffd900;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.login {
+    font-family: YekanBakhBold;
+    font-size: 1rem;
+    background-color: #435a8a;
+    color: #fff;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 10px;
+}
+
+.go-down {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 58px;
+}
+
+.go-down div {
+    background-image: url(../images/arrowbottom.svg);
+    width: 164px;
+    height: 78px;
+}
+
+.go-down img {
+    width: 15px;
+    position: relative;
+    top: -60px;
+}
+
+/* responsive */
+@media only screen and (max-width: 1200px) {
+    .banner {
+        width: 940px;
+        padding: 60px 40px 120px;
+    }
+
+    .banner__img img {
+        width: 430px;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .banner {
+        width: auto;
+        padding: 40px 40px 85px;
+        margin: 0 35px;
+    }
+
+    .banner__img img {
+        display: none;
+    }
+
+    .go-down {
+        bottom: 38px;
+    }
+
+    .banner__text {
+        text-align: center;
+    }
+
+    .banner__text p {
+        margin: 5px 0;
+        font-size: 1rem;
+    }
+
+    .banner__button {
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .banner {
+        margin: 8px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .banner {
+        padding: 80px 40px;
+    }
+
+    .banner__text h3 {
+        text-align: right;
+        font-size: 1.2rem;
+    }
+
+    .banner__text p {
+        text-align: justify;
+        padding: 0 25px;
+    }
+}
